@@ -42,7 +42,6 @@ jobs:
           git clone https://github.com/devops-projects-101/argocd-deployment.git gitops
           cd gitops
           sed -i "s|image: ghcr.io/${{ github.repository }}:.*|image: ghcr.io/${{ github.repository }}:${{ github.sha }}|g" deployment.yaml
-
           
           # Commit changes
           git config --global user.name "GitHub Actions"
