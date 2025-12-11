@@ -60,7 +60,7 @@ jobs:
           cat deployment.yaml
 
           # Push
-          git push -f https://${GIT_TOKEN}@github.com:devops-projects-101/argocd-deployment.git main
+          git push -f https://${GIT_TOKEN}@github.com/devops-projects-101/argocd-deployment.git main
 
         
 
